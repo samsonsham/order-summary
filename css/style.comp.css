@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* define primary colors
+--------------------------------------*/
+/* define neutral colors
+--------------------------------------*/
+/* define typography
+--------------------------------------*/
+/* Reset
+--------------------------------------*/
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Common Elements
+--------------------------------------*/
+a {
+  color: #3829e0;
+}
+
+a:hover {
+  color: #7280a7;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0 20px;
+  background: url(../images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  background-color: #e0e8ff;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.attribution {
+  color: #1f2f56;
+  font-size: 11px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+@media (min-width: 1440px) {
+  .card__body {
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    background: url(../images/pattern-background-mobile.svg);
+    background-repeat: repeat-x;
+    background-color: #e0e8ff;
+  }
+}
+/* Card
+--------------------------------------*/
+.card {
+  width: 340px;
+  background-color: #fff;
+  color: #7280a7;
+  font-family: "Red Hat Display", sans-serif;
+  padding-bottom: 20px;
+  border-radius: 25px;
+}
+.card h1 {
+  font-size: 1.5rem;
+  padding: 5px 0;
+  color: #1f2f56;
+}
+.card p {
+  padding: 0px 0;
+}
+
+/* Card Head Image
+--------------------------------------*/
+.head-img {
+  background: url("../images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  height: 0;
+  padding-top: 50%;
+  opacity: 1;
+}
+
+/* Card Description
+--------------------------------------*/
+.card__desc {
+  text-align: center;
+  padding: 0 15px;
+}
+.card__desc p {
+  line-height: 1.6rem;
+}
+
+/* Card Plan Details
+--------------------------------------*/
+.card__plan-details {
+  background-color: #f5f7ff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+}
+.card__plan-details .change-plan {
+  margin-left: auto;
+}
+.card__plan-details p {
+  line-height: 1.5rem;
+}
+.card__plan-details p:first-child {
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+/* Button Group
+--------------------------------------*/
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* define common button style */
+  /* Payment Button */
+  /* Cancel Button */
+}
+.btn-group input[type=button] {
+  border: 0px;
+  border-radius: 10px;
+  font-weight: 700;
+  height: 50px;
+}
+.btn-group .btn-payment {
+  background-color: #3829e0;
+  color: #fff;
+}
+.btn-group .btn-payment:hover {
+  background-color: rgba(56, 41, 224, 0.5);
+}
+.btn-group .btn-cancel {
+  background-color: #fff;
+  color: #7280a7;
+}
+.btn-group .btn-cancel:hover {
+  color: #1f2f56;
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 420px;
+  }
+
+  .card__desc {
+    padding: 0 10px;
+  }
+}
+
+/*# sourceMappingURL=style.comp.css.map */

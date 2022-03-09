@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* define primary colors
+--------------------------------------*/
+$pale_blue: hsl(225, 100%, 94%);
+$bright_blue: hsl(245, 75%, 52%);
+$bright_blue_hover: hsl(245, 75%, 52%, 0.5);
+
+/* define neutral colors
+--------------------------------------*/
+$very_pale_blue: hsl(225, 100%, 98%);
+$desaturated_blue: hsl(224, 23%, 55%);
+$dark_blue: hsl(223, 47%, 23%);
+
+/* define typography
+--------------------------------------*/
+$font_size: 16px;
+$font_family_redhat: "Red Hat Display", sans-serif;
+
+/* Reset
+--------------------------------------*/
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: $font_size;
+}
+
+/* Common Elements
+--------------------------------------*/
+a {
+  color: $bright_blue;
+}
+a:hover {
+  color: $desaturated_blue;
+  text-decoration: none;
+}

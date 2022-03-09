@@ -1,0 +1,107 @@
+/* Card
+--------------------------------------*/
+.card {
+  width: 340px;
+  background-color: #fff;
+  color: $desaturated_blue;
+  font-family: $font_family_redhat;
+  padding-bottom: 20px;
+  border-radius: 25px;
+  h1 {
+    font-size: 1.5rem;
+    padding: 5px 0;
+    color: $dark_blue;
+  }
+  p {
+    padding: 0px 0;
+  }
+}
+
+/* Card Head Image
+--------------------------------------*/
+.head-img {
+  background: url("../images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  height: 0;
+  padding-top: 50%;
+  opacity: 1;
+}
+
+/* Card Description
+--------------------------------------*/
+.card__desc {
+  text-align: center;
+  padding: 0 15px;
+  p {
+    line-height: 1.6rem;
+  }
+}
+
+/* Card Plan Details
+--------------------------------------*/
+.card__plan-details {
+  background-color: $very_pale_blue;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  .change-plan {
+    margin-left: auto;
+  }
+  p {
+    line-height: 1.5rem;
+  }
+  p:first-child {
+    color: $dark_blue;
+    font-weight: 700;
+  }
+}
+
+/* Button Group
+--------------------------------------*/
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  /* define common button style */
+  input[type="button"] {
+    border: 0px;
+    border-radius: 10px;
+    font-weight: 700;
+    height: 50px;
+  }
+
+  /* Payment Button */
+  .btn-payment {
+    background-color: $bright_blue;
+    color: #fff;
+  }
+  .btn-payment:hover {
+    background-color: $bright_blue_hover;
+  }
+
+  /* Cancel Button */
+  .btn-cancel {
+    background-color: #fff;
+    color: $desaturated_blue;
+  }
+  .btn-cancel:hover {
+    color: $dark_blue;
+  }
+}
+
+$breakpoint: 1440px;
+@media (min-width: $breakpoint) {
+  .card {
+    width: 420px;
+  }
+  .card__desc {
+    padding: 0 10px;
+  }
+}

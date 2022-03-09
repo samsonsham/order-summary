@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="stylesheet" href="css/style.comp.css" />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <!-- ********************  Head Image  ********************* -->
+        <div class="head-img"></div>
+
+        <div class="card__body">
+          <!-- ********************  Description  ********************* -->
+          <div class="card__desc">
+            <h1 class="heading">Order Summary</h1>
+            <p class="paragraph">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </div>
+
+          <!-- ********************  Plan Details  ********************* -->
+          <div class="card__plan-details">
+            <div class="music-img">
+              <img
+                src="images/icon-music.svg"
+                alt="Music Icon"
+                class="music-icon"
+              />
+            </div>
+            <div class="price">
+              <p>Annual Plan</p>
+              <p>$59.99/year</p>
+            </div>
+            <div class="change-plan">
+              <a href="">Change</a>
+            </div>
+          </div>
+
+          <!-- ********************  Button Group  ********************* -->
+          <form action="">
+            <input
+              type="hidden"
+              id="selected-plan"
+              name="selected-plan"
+              value="annual"
+            />
+            <div class="btn-group">
+              <input
+                type="button"
+                class="btn-payment"
+                value="Proceed to Payment"
+              />
+              <input type="button" class="btn-cancel" value="Cancel Order" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/samsonsham"
+          >Samson Sham</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
